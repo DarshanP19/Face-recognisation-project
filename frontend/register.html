@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Registration</title>
+  <style>
+    body { font-family: Arial; background:#f7f7f7; margin:2rem; text-align:center; }
+    h1 { margin-bottom:20px; }
+    input, select, button { padding:10px; margin:5px; border-radius:8px; border:1px solid #ccc; }
+    video { border:2px solid #333; border-radius:10px; margin:10px; }
+    button { background:#333; color:white; cursor:pointer; }
+    #status { margin-top:15px; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h1>Face Registration</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <select id="eventSelect"></select>
+  <div>
+    <video id="video" autoplay playsinline></video>
+  </div>
+  <button id="captureBtn">Capture</button>
+  <button id="submitBtn" disabled>Submit</button>
+  <div id="status"></div>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <script src="/frontend/register.js"></script>
+</body>
+</html>

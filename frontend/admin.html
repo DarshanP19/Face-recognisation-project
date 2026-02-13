@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Manage Events</title>
+  <style>
+    body { font-family: Arial; background:#f7f7f7; margin:2rem; text-align:center; }
+    h1 { margin-bottom:20px; }
+    input, button { padding:10px; margin:5px; border-radius:8px; border:1px solid #ccc; }
+    button { background:#333; color:white; cursor:pointer; }
+    ul { list-style:none; padding:0; margin-top:20px; }
+    li { margin:8px 0; }
+  </style>
+</head>
+<body>
+  <h1>Admin Dashboard - Event Manager</h1>
+  <input type="text" id="eventName" placeholder="Enter event name" />
+  <button onclick="addEvent()">Add Event</button>
+
+  <h2>Existing Events</h2>
+  <ul id="eventList"></ul>
+
+  <script src="/frontend/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Identification</title>
+  <style>
+    body { font-family: Arial; background:#f7f7f7; margin:2rem; text-align:center; }
+    h1 { margin-bottom:20px; }
+    select, button { padding:10px; margin:5px; border-radius:8px; border:1px solid #ccc; }
+    button { background:#333; color:white; cursor:pointer; }
+    video { border:2px solid #333; border-radius:10px; margin:10px; }
+    #result { margin-top:15px; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h1>Face Identification</h1>
+
+  <!-- 🔹 Event dropdown -->
+  <select id="eventSelect"></select>
+
+  <div>
+    <video id="video" autoplay playsinline></video>
+  </div>
+
+  <button id="captureBtn">Capture & Identify</button>
+  <div id="result"></div>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+  <script src="/frontend/identify.js"></script>
+</body>
+</html>
